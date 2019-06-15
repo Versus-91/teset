@@ -1,0 +1,7 @@
+<div  *ngIf="messages">
+  <article class="message" [ngClass]="{'is-success': user === message.senderUserId}" *ngFor="let message of messages">
+    <div class="message-body" >
+      {{message.comment}}
+    </div>
+  </article>
+</div>
